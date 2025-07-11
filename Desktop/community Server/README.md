@@ -1,11 +1,30 @@
-# AI Learning Platform 🚀
+# Community Server - AI Learning Platform 🚀
 
-A modern, YouTube-inspired AI learning platform built with React, featuring educational videos, articles, podcasts, and interactive learning paths. This platform provides a premium, sophisticated user experience for AI enthusiasts and learners.
+A comprehensive AI learning platform community server project featuring a modern React frontend with YouTube-inspired UI/UX. This platform provides a premium, sophisticated user experience for AI enthusiasts and learners through educational videos, articles, podcasts, and interactive learning paths.
 
 ![AI Learning Platform](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-4.4.0-purple?style=for-the-badge&logo=vite)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue?style=for-the-badge&logo=typescript)
+
+## 📁 Project Structure
+
+```
+community-server/
+├── README.md              # This file - Complete documentation
+├── client/                # React frontend application
+│   ├── src/               # React source code
+│   │   ├── components/    # Reusable React components
+│   │   ├── pages/         # Page components
+│   │   ├── data/          # Mock data and API functions
+│   │   └── ...
+│   ├── package.json       # Frontend dependencies
+│   ├── vite.config.js     # Vite configuration
+│   ├── tailwind.config.js # Tailwind CSS configuration
+│   ├── vercel.json        # Vercel deployment config
+│   └── _redirects         # Client-side routing config
+└── .git/                  # Git repository
+```
 
 ## ✨ Features
 
@@ -85,6 +104,10 @@ A modern, YouTube-inspired AI learning platform built with React, featuring educ
 - **Git** - Version control and collaboration
 - **npm** - Package management
 
+### Deployment
+- **Vercel** - Hosting and deployment platform
+- **Client-side routing** - Configured for SPA deployment
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -97,7 +120,7 @@ A modern, YouTube-inspired AI learning platform built with React, featuring educ
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd client
+   cd community-server/client
    ```
 
 2. **Install dependencies**
@@ -124,7 +147,7 @@ npm run lint         # Run ESLint
 npm run lint:fix     # Fix ESLint issues
 ```
 
-## 📁 Project Structure
+## 📁 Detailed Project Structure
 
 ```
 client/
@@ -156,6 +179,8 @@ client/
 ├── package.json           # Dependencies and scripts
 ├── vite.config.js         # Vite configuration
 ├── tailwind.config.js     # Tailwind CSS configuration
+├── vercel.json            # Vercel deployment configuration
+├── _redirects             # Client-side routing configuration
 └── README.md              # Project documentation
 ```
 
@@ -213,6 +238,11 @@ The project uses Tailwind CSS for styling with custom configuration:
 - Build optimization settings
 - Development server configuration
 
+### Vercel Deployment
+- **vercel.json**: Configured for client-side routing
+- **_redirects**: Fallback routing configuration
+- **Build settings**: Optimized for React SPA deployment
+
 ## 📱 Responsive Design
 
 The platform is fully responsive and optimized for:
@@ -229,8 +259,11 @@ npm run build
 
 ### Deploy to Vercel
 1. Connect your GitHub repository to Vercel
-2. Configure build settings
-3. Deploy automatically on push to main branch
+2. Set root directory to `client` (if needed)
+3. Configure build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+4. Deploy automatically on push to main branch
 
 ### Deploy to Netlify
 1. Connect your GitHub repository to Netlify
@@ -272,4 +305,4 @@ For support and questions:
 
 ---
 
-**Built with ❤️ for the AI learning community**
+**Built with ❤️ for the AI learning community** 
